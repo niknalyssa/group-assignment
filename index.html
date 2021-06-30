@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Homepage</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  
+  <style>
+    body{
+      background-image: url('images/bg2.jpg');
+    }
+
+  </style>
+</head>
+<body>
+
+<img><div class="heading" align="center"></img>
+<img src="images/header.png" usemap="#image-map">
+
+
+<map name="image-map">
+    <area target="" alt="" title="" href="https://www.facebook.com/" coords="663,159,688,188" shape="rect">
+    <area target="" alt="" title="" href="https://www.instagram.com" coords="702,162,727,187" shape="rect">
+</map>
+
+
+  
+<div class="menu" align="center">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="recipe.html">Recipe</a>
+<p></p>
+<input class="topnav" type="text" placeholder="Cookies Mix">
+<button type="w3-button" onclick="search">Search</button>
+</div>
+
+
+
+<p></p>
+
+<div class="slideshow-container" align="center">
+
+  
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/welcome.png" style="width:80%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/cookie2.png" style="width:80%">
+  
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/promo.png" style="width:80%">
+    
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/delivery.png" style="width:80%">
+    
+  </div>
+
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/cookie4.jpg" style="width:80%">
+    
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/rv.jpg" style="width:80%">
+    
+  </div>
+
+
+
+ <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer" align="center">
+<footer>
+
+<p><strong>Subscribe To Our Newsletter</p></strong>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><button class="w3-button w3-black" type="submit">Subscribe</button></p>
+    </form>
+
+<p>Copyright © 2021 Cookies Mix Official Page. All Rights Reserved.</p>
+<p>Best view with latest version of Google Chrome Version 91.0.4472.101 (Official Build) (64-bit)</p>
+<p>For Assignment Purpose Only.</p>
+
+
+</div>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Us</title>
+  <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+
+h1, h2, h3, h4, h5, h6 {font-family: "Playfair Display";letter-spacing: 5px;}
+
+.mySlides{
+padding: 20px; 
+margin-top: 20px; 
+margin-bottom: 20px;
+
+}
+
+
+  <style>
+    body{
+      background-image: url('images/bg2.jpg');
+    }
+
+  </style>
+</head>
+<body>
+<img><div class="heading" align="center"></img>
+<img src="images/header.png" usemap="#image-map">
+ <style>
+    body{
+      background-image: url('images/bg2.jpg');
+    }
+
+  </style>
+
+<map name="image-map">
+    <area target="" alt="" title="" href="https://www.facebook.com/" coords="663,159,688,188" shape="rect">
+    <area target="" alt="" title="" href="https://www.instagram.com" coords="702,162,727,187" shape="rect">
+</map>
+
+
+</div>
+  
+<div class="menu" align="center">
+<a href="index.html">Home</a>
+<a href="shop.html">Shop</a>
+<a href="aboutus.html">About Us</a>
+<a href="contact.html">Contact</a>
+<a href="recipe.html">Recipe</a>
+</div>
+
+
+
+
+
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/10.jpeg" style="width:800px" height="400px">
+    <div class="w3-display-bottommiddle  w3-text-white w3-padding-32 w3-hide-small w3-container">
+      <h3>Freshly Bake</h3>
+      <p><b></b></p>
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/12.jpeg" style="width:800px" height="400px">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>More Chips, More Yummy</h3>
+      <p><b></b></p>   
+    </div>
+  </div>
+   <div class="mySlides w3-display-container w3-center">
+    <img src="images/9.jpeg" style="width:800px" height="400px">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Ready to Go!</h3>
+      <p><b></b></p>   
+    </div></div>
+    <br></div>
+
+
+<script>
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+ <div class="w3-row w3-padding-64" id="about">
+   <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/logo.png" class="w3-round w3-image w3-opacity-min" alt="Logo" width="400" height="6000" style= "padding: 2px; width:  500px ;background-color: lightgrey;">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" style="padding:8px; width: 500px; background-color: lightgrey;">ABOUT US</h1><br>
+      <h5 class="w3-center" style="padding:8px; width: 500px; background-color: lightgrey;">Since 2015</h5>
+      <p style="text-align: center;padding:8px; width: 500px; background-color: lightgrey;"; class="w3-large">Cookie Mix began as a small-scale cookie business in 2015. Its founder, Ms. Siti Aisyah, began her cookie business as a pastime, but as cookies became popular and orders increased, she decided to make the cookie business a full-time job. 
+      <p style="text-align: center; padding:8px; width: 500px; background-color: lightgrey;" class="w3-large">Currently, there are two types of chocolate chip cookies that are freshly prepared throughout the day. By using the best ingredients, such as semi-sweet chocolate chips and delicious almonds, these homemade-tasting cookies have become famous merely by word of mouth.</p>
+      <p style="text-align: center; padding:8px; width: 500px; background-color: lightgrey;" class="w3-large">Because of the use of high-quality ingredients and unequalled crunchiness and deliciousness, the cookie mix has improved significantly and is now known as the most delicious homemade cookie recipe in Malaysia.</p>
+       
+    </div>
+  </div>
+  
+  
+  
+   <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"style="text-align: center; background-color: lightgrey;">Members</h3>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/4.jpeg" alt="Aisyah" style="width:100%">
+      <h3>Siti Aisyah</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/5.jpeg" alt="Nalyssa" style="width:100%">
+      <h3>Nalyssa Nadiah</h3>
+      <p class="w3-opacity">Manager</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/3.jpeg" alt="Alya" style="width:100%">
+      <h3>Alya Farzana</h3>
+      <p class="w3-opacity">Crew</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="images/team4.jpeg" alt="Nasuha" style="width:103%">
+      <h3>Nurul Nasuha</h3>
+      <p class="w3-opacity">Crew</p>
+      <p><button class="w3-button w3-light-grey w3-block">Contact</button></p>
+    </div>
+  </div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<div class="footer" align="center">
+<footer>
+
+
+<p>Copyright © 2021 Cookies Mix Official Page. All Rights Reserved.</p>
+<p>Best view with latest version of Google Chrome Version 91.0.4472.101 (Official Build) (64-bit)</p>
+<p>For Assignment Purpose Only.</p>
+
+
+</div>
+</footer>
+</div>
+</body>
+</html>
